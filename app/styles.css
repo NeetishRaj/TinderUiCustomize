@@ -65,7 +65,7 @@ body {
   color: var(--app__text__color);
   background-color: var(--device_background-color);
 }
-.tinderforbananas {
+.myhomeapp {
   position: relative;
   display: flex;
   height: 100%;
@@ -76,7 +76,7 @@ body {
 
   /* overflow: hidden; */
 }
-.tinderforbananas header {
+.myhomeapp header {
   flex-shrink: 0;
   height: calc(var(--app__header__height) * 100vh);
   background-color: var(--app__header__color);
@@ -88,20 +88,20 @@ body {
   align-items: center;
   justify-content: center;
 }
-.tinderforbananas header p {
+.myhomeapp header p {
   margin: 0;
 }
-.tinderforbananas header .copyright {
+.myhomeapp header .copyright {
   font-size: 0.5em;
 }
-.tinderforbananas .view {
+.myhomeapp .view {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   height: 100%;
 }
-.tinderforbananas .view--left-sidebar, .view--right-sidebar {
+.myhomeapp .view--left-sidebar, .view--right-sidebar {
   background-color: var(--app__background__color);
   width: calc(var(--device__sidebar__width) * 100vh);
   height: 100%;
@@ -111,11 +111,11 @@ body {
   top: 0;
   z-index: 0;
 }
-.tinderforbananas .view--right-sidebar {
+.myhomeapp .view--right-sidebar {
   left: unset;
   right: calc(var(--device__sidebar__width) * 100vh * -1);
 }
-.tinderforbananas .sidebar-item {
+.myhomeapp .sidebar-item {
   /* border: 1px solid #333; */
   background-color: #e1e1e1;
   border-radius: calc(var(--app__item__radius) * 100vh);
@@ -126,19 +126,19 @@ body {
   padding: 10px;
   
 }
-.tinderforbananas .view--left-sidebar .view--logo-section {
+.myhomeapp .view--left-sidebar .view--logo-section {
   height: calc(30vh - 15px);
 }
-.tinderforbananas .view--left-sidebar .view--selection-section{
+.myhomeapp .view--left-sidebar .view--selection-section{
   height:calc(70vh - 15px);
 }
 
-.tinderforbananas .view--left-sidebar .view--logo-container img{
+.myhomeapp .view--left-sidebar .view--logo-container img{
   max-width: 100%;
   max-height: 100%;
 }
 
-.tinderforbananas .view--swipelist .item {
+.myhomeapp .view--swipelist .item {
   border-radius: calc(var(--app__item__radius) * 100vh);
   background-color: var(--app__item__color);
   margin: 0 calc(var(--app__item__margin) * 100vh);
@@ -151,7 +151,7 @@ body {
   flex-direction: column;
   align-items: stretch;
 }
-.tinderforbananas .view--swipelist .item picture {
+.myhomeapp .view--swipelist .item picture {
   position: relative;
   width: 100%;
   flex-grow: 0;
@@ -159,7 +159,7 @@ body {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-.tinderforbananas .view--swipelist .item picture:before {
+.myhomeapp .view--swipelist .item picture:before {
   content: '';
   display: block;
   width: 100%;
@@ -168,8 +168,8 @@ body {
   padding-bottom: 100%;
 }
 
-.tinderforbananas .view--details .item__details,
-.tinderforbananas .view--swipelist .item__details {
+.myhomeapp .view--details .item__details,
+.myhomeapp .view--swipelist .item__details {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -177,11 +177,11 @@ body {
   flex-grow: 1;
   padding: calc(var(--app__item__details__padding) * 100vh);
 }
-.tinderforbananas .view--details .item__details {
+.myhomeapp .view--details .item__details {
   flex-grow: 0;
   flex-shrink: 0;
 }
-.tinderforbananas .view--swipelist .item .action {
+.myhomeapp .view--swipelist .item .action {
   position: absolute;
   font-size: calc(var(--app__action__size) * 100vh);
   text-transform: uppercase;
@@ -194,21 +194,21 @@ body {
   opacity: 0;
   user-select: none;
 }
-.tinderforbananas .view--swipelist .item .action--nope {
+.myhomeapp .view--swipelist .item .action--nope {
   right: calc(var(--app__action__offset) * 100vh);
   top: calc(var(--app__action__offset) * 100vh);
   color: var(--app__action--nope__color);
   border-color: var(--app__action--nope__color);
   transform: rotate(calc(var(--app__action__rotation) * 1));
 }
-.tinderforbananas .view--swipelist .item .action--like {
+.myhomeapp .view--swipelist .item .action--like {
   left: calc(var(--app__action__offset) * 100vh);
   top: calc(var(--app__action__offset) * 100vh);
   color: var(--app__action--like__color);
   border-color: var(--app__action--like__color);
   transform: rotate(calc(var(--app__action__rotation) * -1));
 }
-.tinderforbananas .view--swipelist .item .action--superlike {
+.myhomeapp .view--swipelist .item .action--superlike {
   bottom: calc(var(--app__action__offset) * 100vh);
   left: 50%;
   transform: rotate(calc(var(--app__action__rotation) * -1)) translateX(-50%) ;
@@ -218,8 +218,8 @@ body {
 .hidden {
   display: none !important;
 }
-.tinderforbananas .view--swipelist .item__details,
-.tinderforbananas .view--swipelist nav {
+.myhomeapp .view--swipelist .item__details,
+.myhomeapp .view--swipelist nav {
   opacity: 1;
   transition: opacity 0.15s ease-in-out;
   -webkit-user-select: none;
@@ -227,52 +227,52 @@ body {
       -ms-user-select: none;
           user-select: none;
 }
-.tinderforbananas .view--swipelist.overlaid picture {
+.myhomeapp .view--swipelist.overlaid picture {
   visibility: hidden;
 }
-.tinderforbananas .view--swipelist.overlaid .item__details,
-.tinderforbananas .view--swipelist.overlaid nav {
+.myhomeapp .view--swipelist.overlaid .item__details,
+.myhomeapp .view--swipelist.overlaid nav {
   opacity: 0;
 }
-.tinderforbananas .view--swipelist + .view--details section,
-.tinderforbananas .view--swipelist + .view--details nav {
+.myhomeapp .view--swipelist + .view--details section,
+.myhomeapp .view--swipelist + .view--details nav {
   transition: transform 0.15s ease-in-out;
 }
-.tinderforbananas .view--swipelist.overlaid + .view--details section,
-.tinderforbananas .view--swipelist.overlaid + .view--details nav {
+.myhomeapp .view--swipelist.overlaid + .view--details section,
+.myhomeapp .view--swipelist.overlaid + .view--details nav {
   transform: translateY(50vh);
 }
-.tinderforbananas .view--swipelist__controls {
+.myhomeapp .view--swipelist__controls {
   margin-top: auto;
 }
-.tinderforbananas .view--swipelist__controls,
-.tinderforbananas .view--details__controls {
+.myhomeapp .view--swipelist__controls,
+.myhomeapp .view--details__controls {
   padding: calc(var(--app__control__padding) * 100vh);
 
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.tinderforbananas .view--details {
+.myhomeapp .view--details {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-.tinderforbananas .view--details__controls {
+.myhomeapp .view--details__controls {
   position: absolute;
   bottom: 0;
   width: 100%;
   background-image: var(--app__details__control__background);
 }
-.tinderforbananas .control {
+.myhomeapp .control {
   border-radius: 50%;
   background-color: var(--app__control__color);
   box-shadow: var(--app__shadow);
   border: 0;
   padding: 0;
 }
-.tinderforbananas .control svg {
+.myhomeapp .control svg {
   width: 100%;
   height: 100%;
   stroke-linecap: round;
@@ -281,67 +281,67 @@ body {
   stroke-width: calc(var(--app__control__line) * 100vh);
   stroke-linejoin: round;
 }
-.tinderforbananas .control--bigger {
+.myhomeapp .control--bigger {
   width: calc(var(--app__control--bigger__size) * 100vh);
   height: calc(var(--app__control--bigger__size) * 100vh);
 }
-.tinderforbananas .control--big {
+.myhomeapp .control--big {
   width: calc(var(--app__control--big__size) * 100vh);
   height: calc(var(--app__control--big__size) * 100vh);
 }
-.tinderforbananas .control--small {
+.myhomeapp .control--small {
   width: calc(var(--app__control--small__size) * 100vh);
   height: calc(var(--app__control--small__size) * 100vh);
 }
-.tinderforbananas .control--smaller {
+.myhomeapp .control--smaller {
   width: calc(var(--app__control--smaller__size) * 100vh);
   height: calc(var(--app__control--smaller__size) * 100vh);
 }
-.tinderforbananas .control--nope svg {
+.myhomeapp .control--nope svg {
   stroke: var(--app__action--nope__color);
   fill: var(--app__action--nope__color);
 }
-.tinderforbananas .control--like svg {
+.myhomeapp .control--like svg {
   stroke: var(--app__action--like__color);
   fill: var(--app__action--like__color);
 }
-.tinderforbananas .control--superlike svg {
+.myhomeapp .control--superlike svg {
   stroke: var(--app__action--superlike__color);
   fill: var(--app__action--superlike__color);
 }
-.tinderforbananas .control--lightining svg {
+.myhomeapp .control--lightining svg {
   stroke: var(--app__action--lightining__color);
   fill: var(--app__action--lightining__color);
 }
-.tinderforbananas .control--lightining {
+.myhomeapp .control--lightining {
   overflow: hidden;
 }
-.tinderforbananas .lightining-50 > svg {
+.myhomeapp .lightining-50 > svg {
   width: 50%;
   height: 50%;  
   margin-top: 0.5rem;
 }
-.tinderforbananas .control--undo svg {
+.myhomeapp .control--undo svg {
   stroke: var(--app__control--undo__color);
   fill: var(--app__control--undo__color);
 }
-.tinderforbananas .control--inverted svg {
+.myhomeapp .control--inverted svg {
   stroke: var(--app__control__color);
   fill: var(--app__control__color);
 }
-.tinderforbananas .control--inverted.control--like {
+.myhomeapp .control--inverted.control--like {
   background-color: var(--app__action--like__color);
 }
-.tinderforbananas .control--inverted.control--nope {
+.myhomeapp .control--inverted.control--nope {
   background-color: var(--app__action--nope__color);
 }
-.tinderforbananas .control--inverted.control--superlike {
+.myhomeapp .control--inverted.control--superlike {
   background-color: var(--app__action--superlike__color);
 }
-.tinderforbananas .control--inverted.control--lightining {
+.myhomeapp .control--inverted.control--lightining {
   background-color: var(--app__action--lightining__color);
 }
-tinderforbananas-details {
+myhomeapp-details {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -350,38 +350,38 @@ tinderforbananas-details {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
-.tinderforbananas .item__details__name {
+.myhomeapp .item__details__name {
   font-weight: 700;
 }
-.tinderforbananas .item__details__age {
+.myhomeapp .item__details__age {
   margin-left: 0.2em;
 }
-.tinderforbananas .item__details__job,
-.tinderforbananas .item__details__distance {
+.myhomeapp .item__details__job,
+.myhomeapp .item__details__distance {
   font-size: var(--app__font__size--small);
   flex-basis: 100%;
 }
-.tinderforbananas .item__details__distance {
+.myhomeapp .item__details__distance {
   color: var(--app__details__distance__color);
 }
-.tinderforbananas .view--details .description,
-.tinderforbananas .view--details .item__details {
+.myhomeapp .view--details .description,
+.myhomeapp .view--details .item__details {
   background-color: var(--app__item__color);
 }
-.tinderforbananas .view--details .description {
+.myhomeapp .view--details .description {
   flex-grow: 1;
   border-top: 1px solid var(--app__details__distance__color);
   font-size: var(--app__font__size--small);
   padding: calc(var(--app__item__details__padding) * 100vh);
   padding-bottom: calc((var(--app__control--big__size) + 2 * var(--app__control__padding))* 100vh)
 }
-tinderforbananas-carousel {
+myhomeapp-carousel {
   position: relative;
   width: 100%;
   flex-shrink: 0;
   overflow: hidden;
 }
-tinderforbananas-carousel:before {
+myhomeapp-carousel:before {
   content: '';
   width: 100%;
   display: block;
@@ -389,7 +389,7 @@ tinderforbananas-carousel:before {
   pointer-events: none;
   padding-bottom: 100%;
 }
-tinderforbananas-carousel .carousel__item {
+myhomeapp-carousel .carousel__item {
   position: absolute;
   top: 0;
   left: 0;

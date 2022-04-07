@@ -64,7 +64,7 @@
     const top = document.querySelector('.item--top');
     window.ga && ga('send', 'event', `item-${top.data.id}`, event.detail);
     const next = document.querySelector('.item--next');
-    const details = document.querySelector('tinderforbananas-details');
+    const details = document.querySelector('myhomeapp-details');
     top.style.transform = '';
     top.selected = 0;
     top.data = next.data;
@@ -110,9 +110,9 @@
     const detailsText1 = details.querySelector('.item__details');
     const detailsText2 = details.querySelector('.description');
     const detailsNav = details.querySelector('nav');
-    const carousel = document.querySelector('tinderforbananas-carousel');
+    const carousel = document.querySelector('myhomeapp-carousel');
     const image = document.querySelector('.view--swipelist .item--top picture');
-    details.querySelector('tinderforbananas-details').data = data;
+    details.querySelector('myhomeapp-details').data = data;
 
     // Let’s do FLIP!
     const start = image.getBoundingClientRect();
@@ -147,7 +147,7 @@
     const detailsText1 = details.querySelector('.item__details');
     const detailsText2 = details.querySelector('.description');
     const detailsNav = details.querySelector('nav');
-    const carousel = document.querySelector('tinderforbananas-carousel');
+    const carousel = document.querySelector('myhomeapp-carousel');
     const item = document.querySelector('.view--swipelist .item--top');
     const image = document.querySelector('.view--swipelist .item--top picture');
 
@@ -202,7 +202,7 @@
     top.addEventListener('details', showDetails);
     const next = document.querySelector('.item--next');
     next.data = dataProvider.next().value;
-    const details = document.querySelector('tinderforbananas-details');
+    const details = document.querySelector('myhomeapp-details');
     details.addEventListener('dismiss', hideDetails);
     copyControls();
     adjustSwipeItems();

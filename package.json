@@ -1,10 +1,10 @@
 {
-  "name": "tinderforbananas.com",
+  "name": "myhomeapp.com",
   "version": "1.1.5",
   "description": "Tinder For Bananas",
   "repository": {
     "type": "git",
-    "url": "https://github.com/surma/tinderforbananas.com"
+    "url": "https://github.com/surma/myhomeapp.com"
   },
   "author": "Surma <surma@surma.link>",
   "license": "Apache-2.0",
