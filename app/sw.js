@@ -1,13 +1,15 @@
 (function () {
   const VERSION = '{%VERSION%}';
   const files = [
-    'images/bigbanan.jpg',
-    'images/banana.png',
-    'images/banana.svg',
-    'images/testpic1.jpg',
-    'images/testpic2.jpg',
-    'images/testpic3.jpg',
-    'images/testpic4.jpg',
+    'images/069_720x480.jpg',
+    'images/101_1440.jpg',
+    'images/454_720x480.jpg',
+    'images/636_720x480.jpg',
+    'images/658_720x480.jpg',
+    'images/702_720x480.jpg',
+    'images/744_720x480.jpg',
+    'images/fullimage.jpg',
+    'images/logo.png',
     'app.js',
     'ce-carousel.js',
     'ce-details.js',
