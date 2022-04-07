@@ -125,15 +125,15 @@ body {
   font-size: var(--app__font__size--small);
   font-weight: 700;
   text-align: center;
-  margin: 10px 5px;
-  padding: 10px;
+  margin: calc((var(--app__header__margin) * 100vh) /2) calc((var(--app__header__margin) * 100vh) /4);
+  padding: calc((var(--app__header__margin) * 100vh) / 2);
   
 }
 .myhomeapp .view--left-sidebar .view--logo-section {
-  height: calc(30vh - 15px);
+  height: calc(30vh - ((var(--app__header__margin) * 100vh)));
 }
 .myhomeapp .view--left-sidebar .view--selection-section{
-  height:calc(70vh - 15px);
+  height:calc(70vh - ((var(--app__header__margin) * 100vh) / 2));
 }
 
 .myhomeapp .view--left-sidebar .selection-count-item {
