@@ -27,9 +27,10 @@
   --app__font__size--small: 0.7em;
 }
 :root {
-  --device_background-color: black;
+  --device_background-color: white;
   --app__text__color: hsla(0, 0%, 30%, 1);
   --app__background__color: hsla(0, 0%, 95%, 1);
+  --app__section--item__background__color: #e1e1e1;
   --app__header__color: hsla(0, 0%, 100%, 1);
   --app__item__color: hsla(0, 0%, 100%, 1);
   --app__control__color: hsla(0, 0%, 100%, 1);
@@ -79,9 +80,11 @@ body {
 .myhomeapp header {
   flex-shrink: 0;
   height: calc(var(--app__header__height) * 100vh);
-  background-color: var(--app__header__color);
-  box-shadow: var(--app__shadow);
+  background-color: var(--app__section--item__background__color);
+  /* box-shadow: var(--app__shadow); */
   margin-bottom: calc(var(--app__header__margin) * 100vh);
+  margin-top: calc((var(--app__header__margin) * 100vh) /2);
+  border-radius: calc(var(--app__item__radius) * 100vh);
 
   display: flex;
   flex-direction: column;
@@ -117,7 +120,7 @@ body {
 }
 .myhomeapp .sidebar-item {
   /* border: 1px solid #333; */
-  background-color: #e1e1e1;
+  background-color: var(--app__section--item__background__color);
   border-radius: calc(var(--app__item__radius) * 100vh);
   font-size: var(--app__font__size--small);
   font-weight: 700;
@@ -133,6 +136,9 @@ body {
   height:calc(70vh - 15px);
 }
 
+.myhomeapp .view--left-sidebar .selection-count-item {
+
+}
 .myhomeapp .view--left-sidebar .view--logo-container img{
   max-width: 100%;
   max-height: 100%;
@@ -408,6 +414,11 @@ myhomeapp-carousel .carousel__item {
   align-items: center;
 }
 
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .mt-10 {
   margin-top: 0.1rem;
 }
