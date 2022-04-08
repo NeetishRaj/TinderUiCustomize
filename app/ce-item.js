@@ -128,4 +128,8 @@ customElements.define('myhomeapp-item', class extends HTMLElement {
     return this._animate('translateY(-200%)', {next: true})
       .then(_ => this.dispatchEvent(new CustomEvent('swipe', {detail: 'superlike'})));
   }
+  lightining(item) {
+    return this._animate('translateY(200%)', {next: true})
+      .then(_ => this.dispatchEvent(new CustomEvent('swipe', {detail: 'lightining'})));
+  }
 });
